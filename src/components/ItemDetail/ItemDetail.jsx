@@ -1,12 +1,12 @@
-import { productos } from '../../../helpers/gFetch'
 import ItemCount from '../ItemCount/ItemCount'
 
-const ItemDetail = () => {
+const ItemDetail = (productos) => {
+    console.log(productos.detalle.marca)
     return (
         <div>
-            <img src={productos.img} />
-            <p>{productos.modelo}</p>
-            <p>USD${productos.precio}</p>
+            <img src={productos.detalle.img} />
+            <p>{productos.detalle.modelo}</p>
+            <p>USD${productos.detalle.precio}</p>
             <ItemCount />
         </div>
     )

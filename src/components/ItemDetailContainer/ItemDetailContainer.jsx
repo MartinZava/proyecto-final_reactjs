@@ -1,15 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import { gFetch, productos } from '../../../helpers/gFetch'
 import { getProduct } from '../GetProduct/GetProduct'
 import ItemDetail from '../ItemDetail/ItemDetail'
 
 
 
 
-const ItemDetailContainer = () => {
+const ItemDetailContainer = ({}) => {
 
-    const [products, setProduct] = useState({})
+    const [productos, setProduct] = useState([])
     const [loading, setLoading] = useState(true)
 
     const {productId} = useParams()
@@ -22,12 +21,12 @@ const ItemDetailContainer = () => {
             .finally(() => setLoading(false))
     }, [productId])
 
-        
+
 
     return (
         <div>
             {loading ? <h2>Loading...</h2> :
-                <ItemDetail />
+                <ItemDetail detalle={productos} />
             }
         </div>
     )

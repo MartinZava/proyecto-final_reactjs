@@ -1,9 +1,8 @@
 import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
-import { gFetch, productos } from '../../../helpers/gFetch'
+import { Link } from 'react-router-dom'
 
 
-const ItemList = () => {
+const ItemList = ({productos}) => {
     return (
         productos.map(productos => <div key={productos.id}>
             <img src={productos.img} alt={productos.modelo} />
