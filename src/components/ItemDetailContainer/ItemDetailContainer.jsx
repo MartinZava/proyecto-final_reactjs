@@ -16,11 +16,11 @@ const ItemDetailContainer = () => {
     console.log(productId)
 
     useEffect(() => {
-        getProduct(productId)        
-        .then(data => setProduct(data.find(product => product.id === productId)))
-        .catch(error => console.log(error))
-        .finally(() => setLoading(false))
-    },[productId])
+        getProduct(productId)
+            .then(data => setProduct(data))
+            .catch(error => console.log(error))
+            .finally(() => setLoading(false))
+    }, [productId])
 
         
 
