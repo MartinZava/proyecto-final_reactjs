@@ -1,4 +1,5 @@
 
+
 export const productos = [
     {
         id: 1,
@@ -7,7 +8,7 @@ export const productos = [
         cantidad: 1,
         switches: "Cherry MX Brown",
         precio: 120,
-        img: '../src/assets/img/teclados/ducky-one3matcha-1.jpg',
+        img: '../assets/img/teclados/ducky-one3matcha-1.jpg',
     },
     {
         id: 2,
@@ -16,7 +17,7 @@ export const productos = [
         cantidad: 1,
         switches: "Cherry MX Blue",
         precio: 150,
-        img: `../src/assets/img/teclados/duckyxvarmilo-miya-prosakurapink-1.jpg`,
+        img: `../assets/img/teclados/duckyxvarmilo-miya-prosakurapink-1.jpg`,
     },
     {
         id: 3,
@@ -25,7 +26,7 @@ export const productos = [
         cantidad: 1,
         switches: "Gateron Red",
         precio: 130,
-        img: `../src/assets/img/teclados/filco-majestouch-minilaR-1.jpg`,
+        img: `../assets/img/teclados/filco-majestouch-minilaR-1.jpg`,
     },
     {
         id: 4,
@@ -34,7 +35,7 @@ export const productos = [
         cantidad: 1,
         switches: "Kailh BOX Red",
         precio: 100,
-        img: `../src/assets/img/teclados/hhkb-hybrid-type-swhite60-1.jpg`,
+        img: `../assets/img/teclados/hhkb-hybrid-type-swhite60-1.jpg`,
     },
     {
         id: 5,
@@ -43,7 +44,7 @@ export const productos = [
         cantidad: 1,
         switches: "Cherry MX Silver",
         precio: 110,
-        img: `../src/assets/img/teclados/leopold-fc900r-twotone-white-1.jpg`,
+        img: `../assets/img/teclados/leopold-fc900r-twotone-white-1.jpg`,
     },
     {
         id: 6,
@@ -52,7 +53,7 @@ export const productos = [
         cantidad: 1,
         switches: "Cherry MX Brown",
         precio: 125,
-        img: `../src/assets/img/teclados/obinslab-anne-pro2-1.jpg`,
+        img: `../assets/img/teclados/obinslab-anne-pro2-1.jpg`,
     },
     {
         id: 7,
@@ -61,7 +62,7 @@ export const productos = [
         cantidad: 1,
         switches: "Kailh BOX Black",
         precio: 140,
-        img: `../src/assets/img/teclados/Shurikey Saizo 002 75 1.jpg`,
+        img: `../assets/img/teclados/Shurikey Saizo 002 75 1.jpg`,
     },
     {
         id: 8,
@@ -70,7 +71,7 @@ export const productos = [
         cantidad: 1,
         switches: "Gateron Blue",
         precio: 120,
-        img: `../src/assets/img/teclados/varmilo-ma-seriesv2-dreams-on-board-1.jpg`,
+        img: `../assets/img/teclados/varmilo-ma-seriesv2-dreams-on-board-1.jpg`,
     },
     {
         id: 9,
@@ -79,7 +80,7 @@ export const productos = [
         cantidad: 1,
         switches: "Cherry MX White",
         precio: 140,
-        img: `../src/assets/img/teclados/varmilo-ma-seriesv2-dreams-on-board-1.jpg`,
+        img: `../assets/img/teclados/varmilo-minilo-vxb67-mendozae65-1.jpg`,
     },
     {
         id: 10,
@@ -88,7 +89,7 @@ export const productos = [
         cantidad: 1,
         switches: "Kailh BOX blue",
         precio: 130,
-        img: `../src/assets/img/teclados/varmilo-ma-seriesv2-dreams-on-board-1.jpg`,
+        img: `../assets/img/teclados/vortex-core-aluminum40-1.jpg`,
     },
     {
         id: 11,
@@ -97,7 +98,7 @@ export const productos = [
         cantidad: 1,
         switches: "Kailh BOX Yellow",
         precio: 110,
-        img: `../src/assets/img/teclados/vortex-kbt-1.jpg`,
+        img: `../assets/img/teclados/vortex-kbt-1.jpg`,
     },
     {
         id: 12,
@@ -106,7 +107,7 @@ export const productos = [
         cantidad: 1,
         switches: "Kailh BOX Red",
         precio: 130,
-        img: `../src/assets/img/teclados/vortex-race3-1.jpg`,
+        img: `../assets/img/teclados/vortex-race3-1.jpg`,
     },
 ]
 
@@ -126,4 +127,6 @@ export  const gFetch = () => {
         }
     } )
 }
+
+
 

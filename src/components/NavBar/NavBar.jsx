@@ -1,18 +1,21 @@
 import './NavBar.css'
 import { CartWidget } from '../CartWidget/CartWidget';
+import { Link } from 'react-router-dom';
 
-
+// Recordar etiqueta NavLink
 
 export const NavBar = () => {
     return (
         <div>
             <nav id='navBar'>
                 <ul id='lista'>
-                    <li><a href="" id='marca'>Marca</a></li>
-                    <li><a href="" className='lista__links'>Tienda</a></li>
-                    <li><a href="" className='lista__links'>Contacto</a></li>
-                    <li><a href="" className='lista__links'>Galeria</a></li>
+                    <Link to='/'><li><p id='marca'>KeyStore</p></li></Link>
+                    <Link to='/'><li><p className='lista__links'>Teclados</p></li></Link>
+                    <Link to='/'><li><p className='lista__links'>Switches</p></li></Link>
+                    <Link to='/'><li><p className='lista__links'>Cables</p></li></Link>
+                    <Link to='/cart'>
                     <li> <CartWidget /> 1</li>
+                    </Link>
                 </ul>
             </nav>
         </div>
@@ -21,3 +24,5 @@ export const NavBar = () => {
 }
 
 export default NavBar
+
+
