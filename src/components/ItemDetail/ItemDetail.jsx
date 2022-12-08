@@ -1,6 +1,6 @@
 import ItemCount from '../ItemCount/ItemCount'
 
-const ItemDetail = ({detalle}) => {
+const ItemDetail = ({ detalle }) => {
     return (
         <div>
             <img src={detalle.img} />
