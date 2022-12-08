@@ -8,7 +8,7 @@ import ItemDetail from '../ItemDetail/ItemDetail'
 
 const ItemDetailContainer = ({ }) => {
 
-    const [product, setProduct] = useState({})
+    const [detalle, setProduct] = useState({})
     const [loading, setLoading] = useState(true)
 
     const { productId } = useParams()
@@ -19,18 +19,13 @@ const ItemDetailContainer = ({ }) => {
             .then(data => setProduct(data.find(product => product.id === parseInt(productId))))
             .catch(error => console.log(error))
             .finally(() => setLoading(false))
-        // getProduct(productId)
-        //     .then(data => setProduct(data))
-        //     .catch(error => console.log(error))
-        //     .finally(() => setLoading(false))
     }, [productId])
-
 
 
     return (
         <div>
             {loading ? <h2>Loading...</h2> :
-                <ItemDetail detalle={product} />
+                <ItemDetail detalle={detalle} />
             }
         </div>
     )
