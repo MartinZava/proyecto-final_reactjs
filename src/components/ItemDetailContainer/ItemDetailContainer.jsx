@@ -6,13 +6,16 @@ import ItemDetail from '../ItemDetail/ItemDetail'
 
 
 
-const ItemDetailContainer = ({}) => {
+const ItemDetailContainer = ({ }) => {
 
-    const [productos, setProduct] = useState([])
+    const [detalle, setProduct] = useState([])
     const [loading, setLoading] = useState(true)
 
-    const {productId} = useParams()
-    console.log(productId)
+    const { id } = useParams()
+    console.log(id)
+
+    const { productId } = useParams()
+    // console.log(productId)
 
     useEffect(() => {
         getProduct(productId)
@@ -22,11 +25,10 @@ const ItemDetailContainer = ({}) => {
     }, [productId])
 
 
-
     return (
         <div>
             {loading ? <h2>Loading...</h2> :
-                <ItemDetail detalle={productos} />
+                <ItemDetail detalle={detalle} />
             }
         </div>
     )

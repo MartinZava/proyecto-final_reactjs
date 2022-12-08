@@ -7,8 +7,10 @@ export const productos = [
         modelo: "Ducky One 3 Matcha",
         cantidad: 1,
         switches: "Cherry MX Brown",
+        conector: "USB C",
         precio: 120,
         img: '../assets/img/teclados/ducky-one3matcha-1.jpg',
+        categoria: "teclados",
     },
     {
         id: 2,
@@ -16,8 +18,10 @@ export const productos = [
         modelo: "Ducky x Varmilo MIYA Pro Sakura Pink",
         cantidad: 1,
         switches: "Cherry MX Blue",
+        conector: "USB C",
         precio: 150,
         img: `../assets/img/teclados/duckyxvarmilo-miya-prosakurapink-1.jpg`,
+        categoria: "teclados",
     },
     {
         id: 3,
@@ -25,8 +29,10 @@ export const productos = [
         modelo: "Filco Majestouch Minila R",
         cantidad: 1,
         switches: "Gateron Red",
+        conector: "USB C",
         precio: 130,
         img: `../assets/img/teclados/filco-majestouch-minilaR-1.jpg`,
+        categoria: "teclados",
     },
     {
         id: 4,
@@ -34,8 +40,10 @@ export const productos = [
         modelo: "HHKB Hybrid Type-S White 60",
         cantidad: 1,
         switches: "Kailh BOX Red",
+        conector: "USB C",
         precio: 100,
         img: `../assets/img/teclados/hhkb-hybrid-type-swhite60-1.jpg`,
+        categoria: "teclados",
     },
     {
         id: 5,
@@ -43,8 +51,10 @@ export const productos = [
         modelo: "Leopold FC900R Two Tone White",
         cantidad: 1,
         switches: "Cherry MX Silver",
+        conector: "USB C",
         precio: 110,
         img: `../assets/img/teclados/leopold-fc900r-twotone-white-1.jpg`,
+        categoria: "teclados",
     },
     {
         id: 6,
@@ -52,8 +62,10 @@ export const productos = [
         modelo: "Obinslab Anne Pro 2",
         cantidad: 1,
         switches: "Cherry MX Brown",
+        conector: "USB C",
         precio: 125,
         img: `../assets/img/teclados/obinslab-anne-pro2-1.jpg`,
+        categoria: "teclados",
     },
     {
         id: 7,
@@ -61,8 +73,10 @@ export const productos = [
         modelo: "Shurikey Saizo 002 75 1",
         cantidad: 1,
         switches: "Kailh BOX Black",
+        conector: "USB C",
         precio: 140,
         img: `../assets/img/teclados/Shurikey Saizo 002 75 1.jpg`,
+        categoria: "teclados",
     },
     {
         id: 8,
@@ -70,8 +84,10 @@ export const productos = [
         modelo: "Varmilo MA Series V2 Dreams on Board",
         cantidad: 1,
         switches: "Gateron Blue",
+        conector: "USB C",
         precio: 120,
         img: `../assets/img/teclados/varmilo-ma-seriesv2-dreams-on-board-1.jpg`,
+        categoria: "teclados",
     },
     {
         id: 9,
@@ -79,8 +95,10 @@ export const productos = [
         modelo: "Varmilo Minilo VXB67 Mendozae 65",
         cantidad: 1,
         switches: "Cherry MX White",
+        conector: "USB C",
         precio: 140,
         img: `../assets/img/teclados/varmilo-minilo-vxb67-mendozae65-1.jpg`,
+        categoria: "teclados",
     },
     {
         id: 10,
@@ -88,8 +106,10 @@ export const productos = [
         modelo: "Vortex Core Aluminum 40",
         cantidad: 1,
         switches: "Kailh BOX blue",
+        conector: "USB C",
         precio: 130,
         img: `../assets/img/teclados/vortex-core-aluminum40-1.jpg`,
+        categoria: "teclados",
     },
     {
         id: 11,
@@ -97,8 +117,10 @@ export const productos = [
         modelo: "Vortex KBt",
         cantidad: 1,
         switches: "Kailh BOX Yellow",
+        conector: "USB C",
         precio: 110,
         img: `../assets/img/teclados/vortex-kbt-1.jpg`,
+        categoria: "teclados",
     },
     {
         id: 12,
@@ -106,8 +128,120 @@ export const productos = [
         modelo: "Vortex Race 3",
         cantidad: 1,
         switches: "Kailh BOX Red",
+        conector: "USB C",
         precio: 130,
         img: `../assets/img/teclados/vortex-race3-1.jpg`,
+        categoria: "teclados",
+    },
+    {
+        id: 13,
+        marca: "HALO",
+        modelo: "HALO True",
+        cantidad: 1,
+        switches: "Tactile",
+        conector: "USB C",
+        precio: 3,
+        img: `../assets/img/switches/halo-true.jpg`,
+        categoria: "switches",
+    },
+    {
+        id: 14,
+        marca: "Kailh",
+        modelo: "Kailh Polia",
+        cantidad: 1,
+        switches: "Tactile",
+        conector: "USB C",
+        precio: 2.50,
+        img: `../assets/img/switches/kailh-polia.jpg`,
+        categoria: "switches",
+    },
+    {
+        id: 15,
+        marca: "TTC",
+        modelo: "TTC Ace",
+        cantidad: 1,
+        switches: "Linear",
+        conector: "USB C",
+        precio: 2,
+        img: `../assets/img/switches/TTC-ACE-switches-linear.jpg`,
+        categoria: "switches",
+    },
+    {
+        id: 16,
+        marca: "TTC",
+        modelo: "TTC GoldPink",
+        cantidad: 1,
+        switches: "Soft Linear",
+        conector: "USB C",
+        precio: 3.15,
+        img: `../assets/img/switches/TTC-gold-pink-switch.jpg`,
+        categoria: "switches",
+    },
+    {
+        id: 17,
+        marca: "Kailh",
+        modelo: "Kailh BOX Glazed Green",
+        cantidad: 1,
+        switches: "Clicky",
+        conector: "USB C",
+        precio: 2.40,
+        img: `../assets/img/switches/kailhbox-glazed-green.jpg`,
+        categoria: "switches",
+    },
+    {
+        id: 18,
+        marca: "Kailh",
+        modelo: "Kailh Speed Pink",
+        cantidad: 1,
+        switches: "Clicky",
+        conector: "USB C",
+        precio: 3,
+        img: `../assets/img/switches/kailh-speed-pinksmd.jpg`,
+        categoria: "switches",
+    },
+    {
+        id: 19,
+        marca: "Ducky",
+        modelo: "Ducky Iris",
+        cantidad: 1,
+        switches: "-",
+        conector: "USB C, 5-Pin Aviator",
+        precio: 8,
+        img: `../assets/img/cables/ducky-iris.jpg`,
+        categoria: "cables",
+    },
+    {
+        id: 20,
+        marca: "Ducky",
+        modelo: "Ducky x MK Strawberry Frog",
+        cantidad: 1,
+        switches: "-",
+        conector: "USB C, 5-Pin Aviator",
+        precio: 12,
+        img: `../assets/img/cables/ducky-x-mk-strawberry-frog.jpg`,
+        categoria: "cables",
+    },
+    {
+        id: 21,
+        marca: "Ducky",
+        modelo: "Ducky Vonvoyage",
+        cantidad: 1,
+        switches: "-",
+        conector: "USB C, 5-Pin Aviator",
+        precio: 10,
+        img: `../assets/img/cables/ducky-vonvoyage.jpg`,
+        categoria: "cables",
+    },
+    {
+        id: 22,
+        marca: "Ducky",
+        modelo: "Ducky Christmas Limited Edition",
+        cantidad: 1,
+        switches: "-",
+        switches: "Kailh BOX Red",
+        precio: 15,
+        img: `../assets/img/cables/ducky-christmas-limitededition.jpg`,
+        categoria: "cables",
     },
 ]
 
@@ -115,17 +249,17 @@ export const productos = [
 
 
 
-export  const gFetch = () => {
-    return new Promise ((resolve, reject) => {
+export const gFetch = () => {
+    return new Promise((resolve, reject) => {
         const condicion = true
-        if (condicion){
-            setTimeout(() =>{
+        if (condicion) {
+            setTimeout(() => {
                 resolve(productos)
             }, 3000)
         } else {
             reject('olvidate wacho')
         }
-    } )
+    })
 }
 
 
