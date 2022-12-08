@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import { gFetch, productos } from '../../../helpers/gFetch'
+import { gFetch } from '../../../helpers/gFetch'
 import ItemList from '../ItemList/ItemList'
 
 import './ItemListContainer.css'
@@ -12,8 +12,6 @@ const ItemListContainer = ({ }) => {
     const [loading, setLoading] = useState(true)
 
     const { id } = useParams()
-
-    console.log(id)
 
 
     useEffect(() => {
@@ -29,6 +27,8 @@ const ItemListContainer = ({ }) => {
                 .finally(() => setLoading(false))
         }
     }, [id])
+
+    // console.log(id)
 
 
     return (
