@@ -18,7 +18,7 @@ a {
     font-family: 'Quicksand', sans-serif;
     font-size: 25px;
     color: rgb(76, 76, 76);
-    margin-right: 100vh;
+    margin-right: 98vh;
 }
 
 #lista {
@@ -37,7 +37,6 @@ a {
     margin: 0 2vh 0 2vh;
 }
 
-.lista__links--carrito{
+.lista__links--carrito {
     margin-right: 5px;
 }
-
