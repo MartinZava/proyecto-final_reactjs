@@ -1,8 +1,12 @@
 import { Item } from '../Item/Item'
 
+import './ItemDetail.css'
+
 const ItemDetail = ({ detalle }) => {
     return (
-        <Item detalle={detalle} />
+        <div className='card__detalle--container'>
+            <Item detalle={detalle} />
+        </div>
     )
 }
 

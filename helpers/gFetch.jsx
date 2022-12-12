@@ -238,7 +238,7 @@ export const productos = [
         modelo: "Ducky Christmas Limited Edition",
         cantidad: 1,
         switches: "-",
-        switches: "Kailh BOX Red",
+        conector: "Kailh BOX Red",
         precio: 15,
         img: `../assets/img/cables/ducky-christmas-limitededition.jpg`,
         categoria: "cables",
@@ -255,7 +255,7 @@ export const gFetch = () => {
         if (condicion) {
             setTimeout(() => {
                 resolve(productos)
-            }, 3000)
+            }, 2000)
         } else {
             reject('olvidate wacho')
         }
