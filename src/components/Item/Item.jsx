@@ -4,18 +4,18 @@ import ItemCount from '../ItemCount/ItemCount'
 import './Item.css'
 
 
-export const Item = ({ detalle }) => {
+export const Item = (product) => {
     return (
         <div className='card__detalle--flex'>
             <div>
-                <img src={detalle.img} />
+                <img src={product.img} />
             </div>
             <div className='card__detalle'>
-                <p className='card__detalle--textoTitulo'>{detalle.modelo}</p>
-                <p className='card__detalle--textoMarca'>{detalle.marca}</p>
-                <p className='card__detalle--textoDet'>Switches: {detalle.switches}</p>
-                <p className='card__detalle--textoDet'>Conexion: {detalle.conector}</p>
-                <p className='card__detalle--textoPrecio'>Precio: USD${detalle.precio}</p>
+                <p className='card__detalle--textoTitulo'>{product.modelo}</p>
+                <p className='card__detalle--textoMarca'>{product.marca}</p>
+                <p className='card__detalle--textoDet'>Switches: {product.switches}</p>
+                <p className='card__detalle--textoDet'>Conexion: {product.conector}</p>
+                <p className='card__detalle--textoPrecio'>Precio: USD${product.precio}</p>
                 <ItemCount />
             </div>
         </div>
