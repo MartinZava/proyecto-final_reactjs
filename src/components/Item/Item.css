@@ -2,39 +2,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap');
 
 
+a {
+    text-decoration: none;
+    color: rgb(76, 76, 76);
 
-.card__detalle {
-    display: flex;
-    flex-direction: column;
 }
 
-.card__detalle--flex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+
+.card {
+    padding: 30px;
+    width: 350px;
+    margin: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(230, 230, 230);
+    border-radius: 5px;
 }
 
-.card__detalle--textoTitulo {
+.card__img {
+    width: 100%;
+}
+
+.card__texto {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 3rem;
+    font-size: 1.8rem;
 }
 
-.card__detalle--textoMarca {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 2.1rem;
-    color: rgb(198, 198, 198);
-    font-style: oblique;
-}
-
-.card__detalle--textoDet {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.5rem;
-}
-
-.card__detalle--textoPrecio {
+.card__texto--precio {
     font-family: 'Oswald', sans-serif;
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 300;
     color: salmon;
+}
+
+.boton {
+    margin: 5px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: salmon;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+}
+
+
+button:hover {
+    cursor: pointer;
 }
