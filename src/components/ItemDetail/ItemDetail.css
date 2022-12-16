@@ -1,4 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap');
+
+
 .card__detalle--container {
     width: 50%;
     margin: 150px auto;
+}
+
+
+.card__detalle {
+    display: flex;
+    flex-direction: column;
+}
+
+.card__detalle--flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card__detalle--textoTitulo {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 3rem;
+}
+
+.card__detalle--textoMarca {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2.1rem;
+    color: rgb(198, 198, 198);
+    font-style: oblique;
+}
+
+.card__detalle--textoDet {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.5rem;
+}
+
+.card__detalle--textoPrecio {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: salmon;
 }

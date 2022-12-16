@@ -1,7 +1,6 @@
-import { collection, doc, getDoc, getDocs, getFirestore } from 'firebase/firestore'
+import { doc, getDoc, getFirestore } from 'firebase/firestore'
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import { gFetch } from '../../../helpers/gFetch'
 import ItemDetail from '../ItemDetail/ItemDetail'
 
 
@@ -24,19 +23,11 @@ const ItemDetailContainer = ({ }) => {
             .catch(err => console.log(err))
             .finally(() => setLoading(false))
 
-        console.log(product)
-
-
-
-        // gFetch()
-        //     .then(data => setProduct(data.find(product => product.id === parseInt(productId))))
-        //     .catch(error => console.log(error))
-        //     .finally(() => setLoading(false))
     }, [productId])
 
 
     return (
-        <div>
+        <div className='card__detalle--container'>
             {loading ? <h3>Loading...</h3> :
                 <ItemDetail product={product} />
             }
