@@ -5,6 +5,6 @@ export const getProduct = (id) => {
         const prod = productos.find(p => p.id === parseInt(id))
         setTimeout(() => {
             resolve(prod)
-        }, 1000)
+        }, 2000)
     })
 }

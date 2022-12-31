@@ -1,3 +1,6 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import { useCartContext } from "../../context/CartContext/CartContext";
 import ItemCount from "../ItemCount/ItemCount";
 import "./ItemDetail.css";
 
@@ -5,9 +8,15 @@ import "./ItemDetail.css";
 
 const ItemDetail = ({ product }) => {
 
+    const [isQuant, setIsQuant] = useState(false)
+
+    const { addToCart } = useCartContext()
+
     const onAdd = (cantidad) => {
-        console.log(cantidad)
+        addToCart({ ...product, cantidad })
+        setIsQuant(true)
     }
+
     return (
         <div className='card__detalle--flex'>
             <div>
@@ -19,10 +28,17 @@ const ItemDetail = ({ product }) => {
                 <p className='card__detalle--textoDet'>Switches: {product.switches}</p>
                 <p className='card__detalle--textoDet'>Conexion: {product.conector}</p>
                 <p className='card__detalle--textoPrecio'>Precio: USD${product.precio}</p>
-                <ItemCount stock={10} initial={1} onAdd={onAdd} />
+                {isQuant ?
+                    <>
+                        <Link to='/cart'><button>Ir al Carrito</button></Link>
+                        <Link to='/'><button>Seguir Comprando</button></Link>
+                    </>
+                    :
+                    <ItemCount stock={product.cantidad} initial={1} onAdd={onAdd} />
+                }
             </div>
         </div>
     );
 };
 
-export default ItemDetail;
+export default ItemDetail; 

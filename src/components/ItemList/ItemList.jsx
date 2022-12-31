@@ -1,14 +1,9 @@
-import React from 'react'
 import Item from '../Item/Item'
-
 import './ItemList.css'
 
-
-
-const ItemList = ({ productos }) => {
-
+const ItemList = ({ products }) => {
     return (
-        <Item productos={productos} />
+        <Item key={products.id} products={products} />
     )
 }
 

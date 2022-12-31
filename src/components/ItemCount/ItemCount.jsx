@@ -5,23 +5,16 @@ const ItemCount = ({ stock = 10, initial = 1, onAdd }) => {
     const [count, setCount] = useState(initial)
 
     const resta = () => {
-        if (count > initial) {
-            setCount(count - 1)
-
-        }
+        count > initial ? setCount(count - 1) : null
     }
 
     const suma = () => {
-        if (count < stock) {
-            setCount(count + 1)
-        }
+        count < stock ? setCount(count + 1) : null
     }
-
 
     const handleOnAdd = () => {
         onAdd(count)
     }
-
 
     return (
         <div>

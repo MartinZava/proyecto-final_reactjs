@@ -1,12 +1,13 @@
-import { doc, getDoc, getFirestore } from 'firebase/firestore'
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import { doc, getDoc, getFirestore } from 'firebase/firestore'
 import ItemDetail from '../../components/ItemDetail/ItemDetail'
+import { Loader } from '../../components/Loader/loader'
 
 
 
 
-const ItemDetailContainer = ({ }) => {
+const ItemDetailContainer = () => {
 
     const [product, setProduct] = useState({})
     const [loading, setLoading] = useState(true)
@@ -28,9 +29,7 @@ const ItemDetailContainer = ({ }) => {
 
     return (
         <div className='card__detalle--container'>
-            {loading ? <h3>Loading...</h3> :
-                <ItemDetail product={product} />
-            }
+            {loading ? <Loader /> : <ItemDetail product={product} />}
         </div>
     )
 }

@@ -1,18 +1,17 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 
 import './Item.css'
 
 
-const Item = ({ productos }) => {
+const Item = ({ products }) => {
     return (
-        productos.map(productos =>
-            <div key={productos.id} className="card">
-                <img src={productos.img} alt={productos.modelo} className="card__img" />
-                <p className='card__texto'>{productos.modelo}</p>
-                <p className='card__texto--precio'>USD$ {productos.precio}</p>
+        products.map(products =>
+            <div key={products.id} className="card">
+                <img src={products.img} alt={products.modelo} className="card__img" />
+                <p className='card__texto'>{products.modelo}</p>
+                <p className='card__texto--precio'>USD$ {products.precio}</p>
                 <button className='boton'>Agregar al Carrito</button>
-                <Link to={`/detalle/${productos.id}`}>
+                <Link to={`/detalle/${products.id}`}>
                     <button className='boton'>Detalle del Producto</button>
                 </Link>
 

@@ -2,12 +2,13 @@ import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { collection, getDocs, getFirestore, query, where } from 'firebase/firestore'
 import ItemList from '../../components/ItemList/ItemList'
+import { Loader } from '../../components/Loader/loader'
 import './ItemListContainer.css'
 
 
 const ItemListContainer = ({ }) => {
 
-    const [productos, setProducts] = useState([])
+    const [products, setProducts] = useState([])
     const [loading, setLoading] = useState(true)
 
     const { id } = useParams()
@@ -36,12 +37,9 @@ const ItemListContainer = ({ }) => {
 
     return (
         <div id='itemListContainer'>
-            {loading ? <h3>Loading...</h3> :
-                <ItemList productos={productos} />
-            }
+            {loading ? <Loader /> : <ItemList products={products} />}
         </div>
     )
-
 }
 
 export default ItemListContainer
