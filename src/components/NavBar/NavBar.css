@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
 a {
     text-decoration: none;
@@ -15,8 +16,8 @@ a {
 }
 
 #marca {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 25px;
+    font-family: 'Bangers', cursive;
+    font-size: 3rem;
     color: rgb(76, 76, 76);
     margin-right: 49vw;
 }
@@ -34,7 +35,7 @@ a {
 }
 
 .lista__links {
-    margin: 0 2vh 0 2vh;
+    margin: 0 1.5vw 0 1.5vw;
 }
 
 .lista__links--carrito {
