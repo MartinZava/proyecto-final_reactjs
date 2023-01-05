@@ -17,7 +17,6 @@ const CartList = () => {
             }
             <p>El precio total es de: USD$ {totalPrice()}</p>
             <button onClick={emptyCart}>Vaciar carrito</button>
-
         </div>
     )
 }

@@ -1,17 +1,22 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import CartList from '../../components/CartList/CartList'
 import { useCartContext } from '../../context/CartContext/CartContext'
+import CartForm from '../../components/CartForm/CartForm'
+import CartList from '../../components/CartList/CartList'
+
 
 const CartContainer = () => {
 
-    const { cartList } = useCartContext()
     const [product, setProduct] = useState([])
+    const { cartList } = useCartContext()
 
     return (
         <div>
             {cartList.length !== 0 ?
-                <CartList key={product.id} product={product} />
+                <>
+                    <CartList key={product.id} product={product} />
+                    <CartForm />
+                </>
                 :
                 <>
                     <h2>El carrito esta vacio</h2>
@@ -22,4 +27,4 @@ const CartContainer = () => {
     )
 }
 
-export default CartContainer
+export default CartContainer        
