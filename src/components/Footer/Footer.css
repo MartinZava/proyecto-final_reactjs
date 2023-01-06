@@ -5,42 +5,52 @@
 
 .footer {
     background: salmon;
-    height: 150px;
+    height: 180px;
     width: 100%;
     position: absolute;
     bottom: 0;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+
 }
 
 .footer__links {
+    background-color: rgb(255, 154, 143);
     font-family: 'Quicksand', sans-serif;
-    font-size: 18px;
+    font-size: 1rem;
+    text-decoration: none;
+    width: 100%;
+    height: 40px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-content: center;
-    align-items: center;
-    width: 20%;
+    justify-content: center;
+}
 
+.footer__links--ind {
+    margin: 1rem;
+    color: aliceblue;
 }
 
 .footer__credits {
-    color: rgba(92, 126, 158, 0.717);
-    width: 20%;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    color: rgb(205, 205, 205);
+    font-family: 'Source Sans Pro', sans-serif;
+
 }
 
 .footer__social {
-    width: 20%;
+    width: 12%;
     display: flex;
-    align-content: center;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
+.footer__p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.2rem;
+    font-style: oblique;
 }
