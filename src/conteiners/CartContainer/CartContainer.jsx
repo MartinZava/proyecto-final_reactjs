@@ -4,6 +4,8 @@ import { useCartContext } from '../../context/CartContext/CartContext'
 import CartForm from '../../components/CartForm/CartForm'
 import CartList from '../../components/CartList/CartList'
 
+import './CartContainer.css'
+
 
 const CartContainer = () => {
 
@@ -19,8 +21,11 @@ const CartContainer = () => {
                 </>
                 :
                 <>
-                    <h2>El carrito esta vacio</h2>
-                    <Link to='/'>Productos</Link>
+                    <div id='title_empty--flex'>
+                        <h1 id='title_empty'>El carrito esta vacio</h1>
+                        <br />
+                        <Link className='hvr-pulse-grow' id='title_empty--prod' to='/'>Seguir comprando</Link>
+                    </div>
                 </>
             }
         </div>

@@ -14,10 +14,10 @@ const Footer = () => {
             <p className="footer__p">Seguinos en nuestras redes! </p>
             <div className="footer__social">
 
-                <a href=""><Icon icon="icon-park:instagram" width="50" height="50" /></a>
-                <a href=""><Icon icon="icon-park:facebook" width="50" height="50" /></a>
-                <a href=""><Icon icon="icon-park:mail" width="50" height="50" /></a>
-                <a href="https://github.com/MartinZava" target="_blank"><Icon icon="mdi:github" color="white" width="50" height="50" /></a>
+                <a href="" className="hvr-float"><Icon icon="icon-park:instagram" width="50" height="50" /></a>
+                <a href="" className="hvr-float"><Icon icon="icon-park:facebook" width="50" height="50" /></a>
+                <a href="" className="hvr-float"><Icon icon="icon-park:mail" width="50" height="50" /></a>
+                <a href="https://github.com/MartinZava" target="_blank" className="hvr-float"><Icon icon="mdi:github" color="white" width="50" height="50" /></a>
             </div>
             <div className="footer__credits">
                 <p>Proyecto creado por <a href="https://github.com/MartinZava" target="_blank">MartinZava</a></p>

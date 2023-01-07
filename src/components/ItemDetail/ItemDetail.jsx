@@ -30,8 +30,8 @@ const ItemDetail = ({ product }) => {
                 <p className='card__detalle--textoPrecio'>Precio: USD${product.precio}</p>
                 {isQuant ?
                     <>
-                        <Link to='/cart'><button>Ir al Carrito</button></Link>
-                        <Link to='/'><button>Seguir Comprando</button></Link>
+                        <Link to='/cart'><button className="button__then hvr-grow-shadow">Ir al Carrito</button></Link>
+                        <Link to='/'><button className="button__then hvr-grow-shadow">Seguir Comprando</button></Link>
                     </>
                     :
                     <ItemCount stock={product.cantidad} initial={1} onAdd={onAdd} />

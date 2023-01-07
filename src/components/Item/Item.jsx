@@ -8,11 +8,10 @@ const Item = ({ products }) => {
         products.map(products =>
             <div key={products.id} className="card">
                 <img src={products.img} alt={products.modelo} className="card__img" />
-                <p className='card__texto'>{products.modelo}</p>
-                <p className='card__texto--precio'>USD$ {products.precio}</p>
-                <button className='boton'>Agregar al Carrito</button>
+                <p className='card__text'>{products.modelo}</p>
+                <p className='card__text--price'>USD$ {products.precio}</p>
                 <Link to={`/detalle/${products.id}`}>
-                    <button className='boton'>Detalle del Producto</button>
+                    <button className='button hvr-grow-shadow'>Detalle del Producto</button>
                 </Link>
 
             </div>)

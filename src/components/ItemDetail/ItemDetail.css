@@ -3,14 +3,24 @@
 
 
 .card__detalle--container {
-    width: 50%;
+    width: 70%;
     margin: 150px auto;
+    padding: 4rem;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(230, 230, 230);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%), 0 2px 10px 0 rgb(0 0 0 / 20%);
 }
 
 
 .card__detalle {
     display: flex;
     flex-direction: column;
+    background-color: rgb(246, 246, 246);
+    border-radius: 3px;
+    padding: 3rem;
+    width: 30%;
 }
 
 .card__detalle--flex {
@@ -42,4 +52,14 @@
     font-size: 1.5rem;
     font-weight: 400;
     color: salmon;
+}
+
+.button__then {
+    margin: 5px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: #2196f3;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
 }

@@ -17,25 +17,30 @@ a {
     border-width: 2px;
     border-color: rgb(230, 230, 230);
     border-radius: 5px;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 16%), 0 4px 14px 0 rgb(0 0 0 / 30%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .card__img {
     width: 100%;
 }
 
-.card__texto {
+.card__text {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.8rem;
 }
 
-.card__texto--precio {
+.card__text--price {
     font-family: 'Oswald', sans-serif;
     font-size: 1.5rem;
     font-weight: 300;
-    color: salmon;
+    color: #2196f3;
 }
 
-.boton {
+.button {
     margin: 5px;
     font-family: 'Source Sans Pro', sans-serif;
     color: rgb(255, 255, 255);
@@ -46,6 +51,28 @@ a {
 }
 
 
+
 button:hover {
     cursor: pointer;
+}
+
+
+.hvr-grow-shadow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+
+.hvr-grow-shadow:hover,
+.hvr-grow-shadow:focus,
+.hvr-grow-shadow:active {
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
