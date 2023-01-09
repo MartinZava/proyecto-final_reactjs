@@ -12,7 +12,8 @@ const CartForm = () => {
     const [dataForm, setDataForm] = useState({
         name: '',
         phone: '',
-        email: ''
+        email: '',
+        emailConfirm: ''
     })
 
     const addOrder = () => {
@@ -40,7 +41,7 @@ const CartForm = () => {
 
     const formValidation = (e) => {
         e.preventDefault()
-        if (dataForm.name != '' && dataForm.phone != '' && dataForm.email != '') {
+        if (dataForm.name != '' && dataForm.phone != '' && dataForm.email == dataForm.emailConfirm) {
             addOrder(dataForm)
         } else {
             Swal.fire({
@@ -83,6 +84,7 @@ const CartForm = () => {
                 <input className='form__input' type="text" onChange={handleOnChange} value={dataForm.name} name='name' placeholder='Ingrese su nombre' />
                 <input className='form__input' type="text" onChange={handleOnChange} value={dataForm.phone} name='phone' placeholder='Ingrese su telefono' />
                 <input className='form__input' type="email" onChange={handleOnChange} value={dataForm.email} name='email' placeholder='Ingrese su email' />
+                <input className='form__input' type="email" onChange={handleOnChange} value={dataForm.emailConfirm} name='emailConfirm' placeholder='Confirme su email' />
                 <button className='button hvr-grow-shadow' onClick={formValidation}>Finalizar compra</button>
             </form>
         </div>
