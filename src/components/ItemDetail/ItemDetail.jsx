@@ -18,16 +18,16 @@ const ItemDetail = ({ product }) => {
     }
 
     return (
-        <div className='card__detalle--flex'>
+        <div className='card__detail--flex'>
             <div>
                 <img src={product.img} />
             </div>
-            <div className='card__detalle'>
-                <p className='card__detalle--textoTitulo'>{product.modelo}</p>
-                <p className='card__detalle--textoMarca'>{product.marca}</p>
-                <p className='card__detalle--textoDet'>Switches: {product.switches}</p>
-                <p className='card__detalle--textoDet'>Conexion: {product.conector}</p>
-                <p className='card__detalle--textoPrecio'>Precio: USD${product.precio}</p>
+            <div className='card__detail'>
+                <p className='card__detail--textTitle'>{product.modelo}</p>
+                <p className='card__detail--textBrand'>{product.marca}</p>
+                <p className='card__detail--textDet'>Switches: {product.switches}</p>
+                <p className='card__detail--textDet'>Conexion: {product.conector}</p>
+                <p className='card__detail--textPrice'>Precio: USD${product.precio}</p>
                 {isQuant ?
                     <>
                         <Link to='/cart'><button className="button__then hvr-grow-shadow">Ir al Carrito</button></Link>

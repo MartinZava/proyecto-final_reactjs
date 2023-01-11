@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap');
 
 
-.card__detalle--container {
+.card__detail--container {
     width: 70%;
     margin: 150px auto;
     padding: 4rem;
@@ -14,7 +14,7 @@
 }
 
 
-.card__detalle {
+.card__detail {
     display: flex;
     flex-direction: column;
     background-color: rgb(246, 246, 246);
@@ -23,31 +23,31 @@
     width: 30%;
 }
 
-.card__detalle--flex {
+.card__detail--flex {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-.card__detalle--textoTitulo {
+.card__detail--textTitle {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 3rem;
 }
 
-.card__detalle--textoMarca {
+.card__detail--textBrand {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 2.1rem;
     color: rgb(198, 198, 198);
     font-style: oblique;
 }
 
-.card__detalle--textoDet {
+.card__detail--textDet {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.5rem;
 }
 
-.card__detalle--textoPrecio {
+.card__detail--textPrice {
     font-family: 'Oswald', sans-serif;
     font-size: 1.5rem;
     font-weight: 400;

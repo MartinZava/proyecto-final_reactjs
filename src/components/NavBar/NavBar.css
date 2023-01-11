@@ -9,7 +9,7 @@
     margin-top: 3rem;
 }
 
-#marca {
+#brand {
     font-family: 'Bangers', cursive;
     font-size: 3.2rem;
     color: aliceblue;
@@ -23,7 +23,7 @@
 
 }
 
-#lista {
+#list {
     font-family: 'Quicksand', sans-serif;
     font-size: 1.2rem;
     text-decoration: none;
@@ -36,19 +36,19 @@
 }
 
 
-.lista__links {
+.list__links {
     margin: 0 1.5vw 0 1.5vw;
     padding: 4px 6px;
     border-radius: 4px;
     transition: all 0.4s ease-in-out;
 }
 
-.lista__links:hover {
+.list__links:hover {
     background-color: #81c9fa;
     color: aliceblue;
 }
 
-.lista__links--carrito {
+.list__links--cart {
     margin-left: 1vw;
 }
 

@@ -28,7 +28,7 @@ const ItemDetailContainer = () => {
 
 
     return (
-        <div className='card__detalle--container'>
+        <div className='card__detail--container'>
             {loading ? <Loader /> : <ItemDetail product={product} />}
         </div>
     )

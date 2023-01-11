@@ -58,9 +58,6 @@ const CartForm = () => {
         }
     }
 
-
-
-
     const orderConfirmed = (order) => {
         Swal.fire({
             title: "Muchas gracias por tu compra!",
@@ -73,8 +70,6 @@ const CartForm = () => {
             }
         })
     }
-
-
 
     return (
         <div className='form'>

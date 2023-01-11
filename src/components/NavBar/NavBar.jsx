@@ -8,11 +8,11 @@ export const NavBar = () => {
     return (
         <div>
             <nav id='navBar'>
-                <ul id='lista'>
-                    <Link to='/'><li><p className='hvr-wobble-horizontal' id='marca'>KeyStore</p></li></Link>
-                    <Link to='/categorias/teclados'><li><p className='lista__links'>Teclados</p></li></Link>
-                    <Link to='/categorias/switches'><li><p className='lista__links'>Switches</p></li></Link>
-                    <Link to='/categorias/cables'><li><p className='lista__links'>Cables</p></li></Link>
+                <ul id='list'>
+                    <Link to='/'><li><p className='hvr-wobble-horizontal' id='brand'>KeyStore</p></li></Link>
+                    <Link to='/categorias/teclados'><li><p className='list__links'>Teclados</p></li></Link>
+                    <Link to='/categorias/switches'><li><p className='list__links'>Switches</p></li></Link>
+                    <Link to='/categorias/cables'><li><p className='list__links'>Cables</p></li></Link>
                     <Link to='/cart'>
                         <li> <CartWidget /></li>
                     </Link>
